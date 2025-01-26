@@ -1,155 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="1" total="8" passed="5" failed="1" skipped="0">
+<testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-19T16:23:27 IST" name="Surefire suite" finished-at="2025-01-19T16:24:29 IST" duration-ms="62780">
+  <suite started-at="2025-01-26T18:32:49 IST" name="Purchase" finished-at="2025-01-26T18:33:26 IST" duration-ms="36603">
     <groups>
-      <group name="ErrorHandling">
-        <method signature="ErrorValidationTest.incorrectCreds()[pri:0, instance:AutomationFramework.tests.ErrorValidationTest@61230f6a]" name="incorrectCreds" class="AutomationFramework.tests.ErrorValidationTest"/>
-      </group> <!-- ErrorHandling -->
       <group name="Purchase">
-        <method signature="SubmitorderTest.submitorder(java.util.HashMap)[pri:0, instance:AutomationFramework.tests.SubmitorderTest@3e2e18f2]" name="submitorder" class="AutomationFramework.tests.SubmitorderTest"/>
+        <method signature="SubmitorderTest.submitorder(java.util.HashMap)[pri:0, instance:AutomationFramework.tests.SubmitorderTest@393671df]" name="submitorder" class="AutomationFramework.tests.SubmitorderTest"/>
       </group> <!-- Purchase -->
     </groups>
-    <test started-at="2025-01-19T16:23:27 IST" name="Surefire test" finished-at="2025-01-19T16:24:29 IST" duration-ms="62780">
-      <class name="AutomationFramework.tests.ErrorValidationTest">
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:AutomationFramework.tests.ErrorValidationTest@61230f6a]" started-at="2025-01-19T16:23:27 IST" name="launchapp" finished-at="2025-01-19T16:23:31 IST" duration-ms="4043" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapp -->
-        <test-method signature="ProductErrorValidation()[pri:0, instance:AutomationFramework.tests.ErrorValidationTest@61230f6a]" started-at="2025-01-19T16:23:31 IST" name="ProductErrorValidation" finished-at="2025-01-19T16:23:43 IST" duration-ms="12741" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductErrorValidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:AutomationFramework.tests.ErrorValidationTest@61230f6a]" started-at="2025-01-19T16:23:43 IST" name="teardown" finished-at="2025-01-19T16:23:44 IST" duration-ms="261" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:AutomationFramework.tests.ErrorValidationTest@61230f6a]" started-at="2025-01-19T16:23:44 IST" name="launchapp" finished-at="2025-01-19T16:23:47 IST" duration-ms="2952" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapp -->
-        <test-method retried="true" signature="incorrectCreds()[pri:0, instance:AutomationFramework.tests.ErrorValidationTest@61230f6a]" started-at="2025-01-19T16:23:47 IST" name="incorrectCreds" finished-at="2025-01-19T16:23:47 IST" duration-ms="419" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrect emails or password.] but found [Incorrect email or password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect emails or password.] but found [Incorrect email or password.]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at AutomationFramework.tests.ErrorValidationTest.incorrectCreds(ErrorValidationTest.java:39)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- incorrectCreds -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:AutomationFramework.tests.ErrorValidationTest@61230f6a]" started-at="2025-01-19T16:23:47 IST" name="teardown" finished-at="2025-01-19T16:23:47 IST" duration-ms="188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:AutomationFramework.tests.ErrorValidationTest@61230f6a]" started-at="2025-01-19T16:23:47 IST" name="launchapp" finished-at="2025-01-19T16:23:50 IST" duration-ms="2926" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapp -->
-        <test-method signature="incorrectCreds()[pri:0, instance:AutomationFramework.tests.ErrorValidationTest@61230f6a]" started-at="2025-01-19T16:23:50 IST" name="incorrectCreds" finished-at="2025-01-19T16:23:51 IST" duration-ms="404" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrect emails or password.] but found [Incorrect email or password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect emails or password.] but found [Incorrect email or password.]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at AutomationFramework.tests.ErrorValidationTest.incorrectCreds(ErrorValidationTest.java:39)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- incorrectCreds -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:AutomationFramework.tests.ErrorValidationTest@61230f6a]" started-at="2025-01-19T16:23:51 IST" name="teardown" finished-at="2025-01-19T16:23:51 IST" duration-ms="201" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- AutomationFramework.tests.ErrorValidationTest -->
+    <test started-at="2025-01-26T18:32:49 IST" name="Submit order Test" finished-at="2025-01-26T18:33:26 IST" duration-ms="36528">
       <class name="AutomationFramework.tests.SubmitorderTest">
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:AutomationFramework.tests.SubmitorderTest@3e2e18f2]" started-at="2025-01-19T16:23:51 IST" name="launchapp" finished-at="2025-01-19T16:23:54 IST" duration-ms="2834" status="PASS">
+        <test-method is-config="true" signature="launchapp()[pri:0, instance:AutomationFramework.tests.SubmitorderTest@393671df]" started-at="2025-01-26T18:32:49 IST" name="launchapp" finished-at="2025-01-26T18:32:53 IST" duration-ms="3531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchapp -->
-        <test-method signature="submitorder(java.util.HashMap)[pri:0, instance:AutomationFramework.tests.SubmitorderTest@3e2e18f2]" started-at="2025-01-19T16:23:54 IST" name="submitorder" data-provider="getData" finished-at="2025-01-19T16:24:08 IST" duration-ms="13545" status="PASS">
+        <test-method signature="submitorder(java.util.HashMap)[pri:0, instance:AutomationFramework.tests.SubmitorderTest@393671df]" started-at="2025-01-26T18:32:53 IST" name="submitorder" data-provider="getData" finished-at="2025-01-26T18:33:07 IST" duration-ms="14122" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -160,15 +25,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitorder -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:AutomationFramework.tests.SubmitorderTest@3e2e18f2]" started-at="2025-01-19T16:24:08 IST" name="teardown" finished-at="2025-01-19T16:24:08 IST" duration-ms="254" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:AutomationFramework.tests.SubmitorderTest@393671df]" started-at="2025-01-26T18:33:07 IST" name="teardown" finished-at="2025-01-26T18:33:07 IST" duration-ms="370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:AutomationFramework.tests.SubmitorderTest@3e2e18f2]" started-at="2025-01-19T16:24:08 IST" name="launchapp" finished-at="2025-01-19T16:24:10 IST" duration-ms="2027" status="PASS">
+        <test-method is-config="true" signature="launchapp()[pri:0, instance:AutomationFramework.tests.SubmitorderTest@393671df]" started-at="2025-01-26T18:33:07 IST" name="launchapp" finished-at="2025-01-26T18:33:11 IST" duration-ms="3813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchapp -->
-        <test-method signature="submitorder(java.util.HashMap)[pri:0, instance:AutomationFramework.tests.SubmitorderTest@3e2e18f2]" started-at="2025-01-19T16:24:10 IST" name="submitorder" data-provider="getData" finished-at="2025-01-19T16:24:23 IST" duration-ms="13474" status="PASS">
+        <test-method signature="submitorder(java.util.HashMap)[pri:0, instance:AutomationFramework.tests.SubmitorderTest@393671df]" started-at="2025-01-26T18:33:11 IST" name="submitorder" data-provider="getData" finished-at="2025-01-26T18:33:25 IST" duration-ms="14073" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -179,49 +44,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitorder -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:AutomationFramework.tests.SubmitorderTest@3e2e18f2]" started-at="2025-01-19T16:24:23 IST" name="teardown" finished-at="2025-01-19T16:24:24 IST" duration-ms="216" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:AutomationFramework.tests.SubmitorderTest@3e2e18f2]" started-at="2025-01-19T16:24:24 IST" name="launchapp" finished-at="2025-01-19T16:24:26 IST" duration-ms="1946" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapp -->
-        <test-method signature="Verifyorder(java.util.HashMap)[pri:0, instance:AutomationFramework.tests.SubmitorderTest@3e2e18f2]" started-at="2025-01-19T16:24:26 IST" name="Verifyorder" data-provider="getData" finished-at="2025-01-19T16:24:26 IST" depends-on-methods="AutomationFramework.tests.SubmitorderTest.submitorder" duration-ms="725" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{input=QWERTY, password=Test1234, email=Skip123@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verifyorder -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:AutomationFramework.tests.SubmitorderTest@3e2e18f2]" started-at="2025-01-19T16:24:26 IST" name="teardown" finished-at="2025-01-19T16:24:26 IST" duration-ms="176" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="launchapp()[pri:0, instance:AutomationFramework.tests.SubmitorderTest@3e2e18f2]" started-at="2025-01-19T16:24:26 IST" name="launchapp" finished-at="2025-01-19T16:24:29 IST" duration-ms="2033" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapp -->
-        <test-method signature="Verifyorder(java.util.HashMap)[pri:0, instance:AutomationFramework.tests.SubmitorderTest@3e2e18f2]" started-at="2025-01-19T16:24:29 IST" name="Verifyorder" data-provider="getData" finished-at="2025-01-19T16:24:29 IST" depends-on-methods="AutomationFramework.tests.SubmitorderTest.submitorder" duration-ms="702" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{input=BANARSI SAREE, password=Test1234, email=Skip1234@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verifyorder -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:AutomationFramework.tests.SubmitorderTest@3e2e18f2]" started-at="2025-01-19T16:24:29 IST" name="teardown" finished-at="2025-01-19T16:24:29 IST" duration-ms="155" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:AutomationFramework.tests.SubmitorderTest@393671df]" started-at="2025-01-26T18:33:25 IST" name="teardown" finished-at="2025-01-26T18:33:26 IST" duration-ms="384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- AutomationFramework.tests.SubmitorderTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Submit order Test -->
+    <test started-at="2025-01-26T18:33:26 IST" name="ErrorValidation Test" finished-at="2025-01-26T18:33:26 IST" duration-ms="0">
+    </test> <!-- ErrorValidation Test -->
+  </suite> <!-- Purchase -->
 </testng-results>
