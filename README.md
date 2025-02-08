@@ -1,13 +1,13 @@
 # SeleniumTestNgFramework
 
 ## Overview
-SeleniumTestNgFramework is a test automation framework developed using Java, Selenium, Maven, and Jenkins (CI/CD). This framework is designed to automate various test cases for the ShopEase (SauceDemo) application, ensuring the reliability and efficiency of the application through continuous integration and continuous delivery (CI/CD). The test results are generated using Extent Reports, providing comprehensive insights into the test execution.
+SeleniumTestNgFramework is a test automation framework developed using Java, Selenium, Maven, and Jenkins (CI/CD). This framework is designed to automate various test cases for the Ecommm application, ensuring the reliability and efficiency of the application through continuous integration and continuous delivery (CI/CD). The test results are generated using Extent Reports, providing comprehensive insights into the test execution.
 
 
 
 
 ## Features
-- **Automated Test Cases**: A set of predefined test cases for critical functionalities of the ShopEase application.
+- **Automated Test Cases**: A set of predefined test cases for critical functionalities of the Ecommm application.
 - **Cross-Browser Testing**: Supports running tests on Chrome, Firefox, Edge, and Chrome in headless mode.
 - **Screenshot Capture**: Screenshots are captured for each test execution, aiding in debugging and validation.
 - **Extent Reports**: Detailed test reports generated after each Jenkins job run, offering a clear view of the test results.
@@ -78,7 +78,7 @@ The framework is integrated with Jenkins to enable CI/CD. A Jenkins job is confi
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/AutomationForge/SeleniumTestNgFramework.git
-   cd ShopEaseAutomation
+   cd SeleniumTestNgFramework
 
 2. **Install Dependencies**:
    mvn install
@@ -94,7 +94,7 @@ The framework is integrated with Jenkins to enable CI/CD. A Jenkins job is confi
 
 1. **Set up a new Jenkins job with the Git repository**:
    - Navigate to your Jenkins dashboard and create a new job.
-   - Select the appropriate job type (e.g., Freestyle project) and configure the Git repository with the URL of your ShopEaseAutomation project.
+   - Select the appropriate job type (e.g., Freestyle project) and configure the Git repository with the URL of your Ecomm project.
 
 2. **Add a build step to execute the Maven goals**:
    - In the "Build" section of the job configuration, add a build step to "Invoke top-level Maven targets".
@@ -116,7 +116,7 @@ The framework is integrated with Jenkins to enable CI/CD. A Jenkins job is confi
 
 
 ## Conclusion
-The ShopEaseAutomation framework is a comprehensive solution for automating the testing of the SauceDemo application. With its robust structure, detailed reporting, and CI/CD integration, it ensures that the application remains reliable and efficient. Future enhancements will expand its capabilities, providing even more coverage and reliability for the application.
+The Ecomm framework is a comprehensive solution for automating the testing of the SauceDemo application. With its robust structure, detailed reporting, and CI/CD integration, it ensures that the application remains reliable and efficient. Future enhancements will expand its capabilities, providing even more coverage and reliability for the application.
 
 For any issues or contributions, please refer to the project's GitHub repository. Happy testing!
 
