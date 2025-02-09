@@ -42,7 +42,7 @@ public class ErrorValidationTest extends BaseTest {
 	@Test
 	public void ProductErrorValidation() throws IOException {
 
-		String prdname = "qwerty";
+		String prdname = "LG Refrigerator";
 
 		ProductCatalogue productCatalogue = landingpage.loginapplication("Skip1234@gmail.com", "Test1234");
 
@@ -54,7 +54,7 @@ public class ErrorValidationTest extends BaseTest {
 
 		myCartPage.returnaddedProducttocart();
 
-		Boolean match = myCartPage.VerifyProductDisplay("qwerty33");
+		Boolean match = myCartPage.VerifyProductDisplay("LG Refrigerator33");
 
 		Assert.assertFalse(match);
 
