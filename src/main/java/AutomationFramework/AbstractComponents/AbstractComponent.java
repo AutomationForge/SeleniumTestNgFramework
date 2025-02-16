@@ -66,5 +66,14 @@ public class AbstractComponent {
 		orderBtn.click();
 
 	}
-	
+	public void clickElementWithJS(By locator) { 
+	    // Find the element using the provided locator
+	    WebElement element = driver.findElement(locator);
+
+	    // Cast the driver to JavascriptExecutor
+	    JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+	    
+	    // Execute the JavaScript click on the element
+	    jsExecutor.executeScript("arguments[0].click();", element);
+	}
 }

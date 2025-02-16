@@ -33,6 +33,7 @@ public class MyCartPage extends AbstractComponent {
 
 	private By addedPrdtoappear = By.xpath("//div[@class='cartSection']//h3");
 
+	private By checkoutButton =By.xpath("//button[@type='button' and text()='Checkout']");
 	
 	public List<WebElement> returnaddedProducttocart() {
 		// waitForElementToAppear(toastgby);
@@ -48,12 +49,15 @@ public class MyCartPage extends AbstractComponent {
 		
 	}
 
+
+
 	public Paymentpage goToPaymentPage() {
 		
-		Checkoutbtnclk.click();
+		waitForElementToAppear(checkoutButton);
+		//Checkoutbtnclk.click();
+		clickElementWithJS(checkoutButton);
 		Paymentpage paymentpage = new Paymentpage(driver);
 		return paymentpage;
 
 	}
-
 }
