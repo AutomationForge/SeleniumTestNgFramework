@@ -8,7 +8,7 @@
     <classes>
       <class name="AutomationFramework.tests.ErrorValidationTest">
         <methods>
-          <include name="incorrectCreds"/>
+          <include name="ProductErrorValidation"/>
           <include name="teardown"/>
           <include name="launchapp"/>
         </methods>
