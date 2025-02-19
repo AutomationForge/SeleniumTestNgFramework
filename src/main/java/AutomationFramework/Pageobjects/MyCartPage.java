@@ -23,7 +23,7 @@ public class MyCartPage extends AbstractComponent {
 	}
 
 	// WebElement userEmail = driver.findElement(By.id("userEmail"));
-
+ // new comments added
 	// Page factory
 	@FindBy(xpath = "//div[@class='cartSection']//h3")
 	private List<WebElement> CartProduct;
