@@ -2,14 +2,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="8" parallel="methods" name="Failed suite [Ecomm Automation Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="8" parallel="methods" name="UI Automation Test(failed)">
-    <parameter name="isHeadless" value="false"/>
+    <parameter name="isHeadless" value="true"/>
     <parameter name="browser" value="chrome"/>
-    <parameter name="isLambdaTest" value="false"/>
+    <parameter name="isLambdaTest" value="true"/>
     <classes>
       <class name="com.ui.tests.LoginTest">
         <methods>
           <include name="setUp"/>
-          <include name="loginExcelTest"/>
+          <include name="loginCSVTest" invocation-numbers="0 0 2"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.ui.tests.LoginTest -->

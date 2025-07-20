@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AutomationFramework.tests.SubmitorderTest">
+      <class name="com.ui.tests.LoginTest">
         <methods>
-          <include name="teardown"/>
-          <include name="submitorder"/>
-          <include name="launchapp"/>
+          <include name="setUp"/>
+          <include name="loginCSVTest" invocation-numbers="0 0 2"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- AutomationFramework.tests.SubmitorderTest -->
+      </class> <!-- com.ui.tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

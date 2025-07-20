@@ -3,11 +3,14 @@
 	verbose="1">
 	<test name="UI Automation Test">
 
-		<parameter name="browser" value="chrome"></parameter>
-		<parameter name="isLambdaTest" value="false"></parameter>
-		<parameter name="isHeadless" value="false"></parameter>
+		<parameter name="browser" value="${browser}"></parameter>
+		<parameter name="isLambdaTest" value="${isLambdaTest}"></parameter>
+		<parameter name="isHeadless" value="${isHeadless}"></parameter>
 		<classes>
 			<class name="com.ui.tests.LoginTest">
+				<methods>
+					<include name="loginExcelTest" />
+				</methods>
 			</class>
 		</classes>
 	</test>

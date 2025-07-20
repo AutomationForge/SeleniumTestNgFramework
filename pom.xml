@@ -105,9 +105,15 @@
 				<version>3.1.2</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testSuites/testng.xml</suiteXmlFile>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
+					<systemPropertyVariables>
+						<browser>${browser}</browser>
+						<isLambdaTest>${isLambdaTest}</isLambdaTest>
+						<isHeadless>${isHeadless}</isHeadless>
+					</systemPropertyVariables>
 				</configuration>
+
 			</plugin>
 
 			<plugin>
