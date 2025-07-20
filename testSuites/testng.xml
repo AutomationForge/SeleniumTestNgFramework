@@ -1,20 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Ecomm Automation Test Suite" parallel="methods" thread-count="8"
+	verbose="1">
+	<test name="UI Automation Test">
 
-<suite parallel="tests" name="Suite">
-	<listeners>
-		<listener class-name="AutomationFramework.TestComponents.Listeners"></listener>
-	</listeners>
-	<test thread-count="5" name="Submit order Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="isLambdaTest" value="false"></parameter>
+		<parameter name="isHeadless" value="false"></parameter>
 		<classes>
-			<class name="AutomationFramework.tests.SubmitorderTest" />
-		</classes>
-	</test> <!--
-	Test -->
-	<test thread-count="5" name="ErrorValidation Test">
-		<classes>
-			<class name="AutomationFramework.tests.ErrorValidationTest" />
+			<class name="com.ui.tests.LoginTest">
+			</class>
 		</classes>
 	</test>
-</suite> <!--
-Suite -->
+</suite>

@@ -11,7 +11,7 @@
       <class name="AutomationFramework.tests.SubmitorderTest">
         <methods>
           <include name="teardown"/>
-          <include name="submitorder" invocation-numbers="1"/>
+          <include name="submitorder"/>
           <include name="launchapp"/>
         </methods>
       </class> <!-- AutomationFramework.tests.SubmitorderTest -->
