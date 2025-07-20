@@ -2,18 +2,18 @@
 <testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-20T15:09:56 IST" name="Ecomm Automation Test Suite" finished-at="2025-07-20T15:10:05 IST" duration-ms="9077">
+  <suite started-at="2025-07-20T15:29:11 IST" name="Default suite" finished-at="2025-07-20T15:29:19 IST" duration-ms="8452">
     <groups>
       <group name="sanity">
-        <method signature="LoginTest.loginExcelTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@22bac7bc]" name="loginExcelTest" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.loginExcelTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@366c4480]" name="loginExcelTest" class="com.ui.tests.LoginTest"/>
       </group> <!-- sanity -->
       <group name="e2e">
-        <method signature="LoginTest.loginExcelTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@22bac7bc]" name="loginExcelTest" class="com.ui.tests.LoginTest"/>
+        <method signature="LoginTest.loginExcelTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@366c4480]" name="loginExcelTest" class="com.ui.tests.LoginTest"/>
       </group> <!-- e2e -->
     </groups>
-    <test started-at="2025-07-20T15:09:56 IST" name="UI Automation Test" finished-at="2025-07-20T15:10:05 IST" duration-ms="9077">
+    <test started-at="2025-07-20T15:29:11 IST" name="Default test" finished-at="2025-07-20T15:29:19 IST" duration-ms="8452">
       <class name="com.ui.tests.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@22bac7bc]" started-at="2025-07-20T15:09:57 IST" name="setUp" description="Load the home page of this website" finished-at="2025-07-20T15:10:03 IST" duration-ms="5708" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,boolean,boolean,org.testng.ITestResult)[pri:0, instance:com.ui.tests.LoginTest@366c4480]" started-at="2025-07-20T15:29:12 IST" name="setUp" description="Load the home page of this website" finished-at="2025-07-20T15:29:17 IST" duration-ms="5511" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,19 +27,19 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[false]]>
+                <![CDATA[true]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.loginExcelTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@22bac7bc] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=LoginTest.loginExcelTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@366c4480] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginExcelTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@22bac7bc]" started-at="2025-07-20T15:10:03 IST" name="loginExcelTest" description="Verifies with valid user is able to login into Application" data-provider="LoginExcelTestDataProvider" finished-at="2025-07-20T15:10:05 IST" duration-ms="2192" status="PASS">
+        <test-method signature="loginExcelTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@366c4480]" started-at="2025-07-20T15:29:17 IST" name="loginExcelTest" description="Verifies with valid user is able to login into Application" data-provider="LoginExcelTestDataProvider" finished-at="2025-07-20T15:29:19 IST" duration-ms="1726" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,11 +50,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginExcelTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@22bac7bc]" started-at="2025-07-20T15:10:05 IST" name="tearDown" description="Tear down the browser" finished-at="2025-07-20T15:10:05 IST" duration-ms="179" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ui.tests.LoginTest@366c4480]" started-at="2025-07-20T15:29:19 IST" name="tearDown" description="Tear down the browser" finished-at="2025-07-20T15:29:19 IST" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ui.tests.LoginTest -->
-    </test> <!-- UI Automation Test -->
-  </suite> <!-- Ecomm Automation Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
