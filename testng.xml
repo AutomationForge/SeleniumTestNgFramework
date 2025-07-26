@@ -8,9 +8,6 @@
 		<parameter name="isHeadless" value="${isHeadless}"></parameter>
 		<classes>
 			<class name="com.ui.tests.LoginTest">
-				<methods>
-					<include name="loginExcelTest" />
-				</methods>
 			</class>
 		</classes>
 	</test>
