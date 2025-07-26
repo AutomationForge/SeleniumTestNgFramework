@@ -41,6 +41,7 @@ public class TestBase {
 		} else {
 			// Running test on local machine
 			logger.info("Load the home page of this website");
+			logger.info("Browser parameter received: '" + browser + "'");
 			homePage = new HomePage(Browser.valueOf(browser.toUpperCase()), isHeadless);
 
 		}
