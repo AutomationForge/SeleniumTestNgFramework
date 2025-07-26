@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>UI Automation Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/3/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/6</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jul 26 12:12:14 IST 2025</td>
+<td>Started on:</td><td>Sat Jul 26 12:16:05 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>32 seconds (32904 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1493 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,142 +68,34 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ui.tests.LoginTest.loginCSVTest()'><b>loginCSVTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with valid user is able to login into Application<br>Parameters: User [emailAddress=sandsj@yopmail.com, password=pass123]</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;View my customer account&apos;]&quot;}
-  (Session info: chrome=138.0.7204.169)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [367e42049bf00ad650c819c73b5273cf, findElement {value=//a[@title=&apos;View my customer account&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\sata0222\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59650}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59650/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 367e42049bf00ad650c819c73b5273cf
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:171)
-	at com.ui.pages.MyAccountPage.getUserName(MyAccountPage.java:20)
-	at com.ui.tests.LoginTest.loginCSVTest(LoginTest.java:80)
+<td title='com.ui.tests.LoginTest.setUp()'><b>setUp</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Load the home page of this website<br>Parameters: , false, false, [TestResult name={null} status=CREATED method=LoginTest.loginJsonTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fc6f97f] output={null}]</td>
+<td><div><pre>java.lang.IllegalArgumentException: No enum constant com.constants.Browser.
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at com.constants.Browser.valueOf(Browser.java:3)
+	at com.ui.tests.TestBase.setUp(TestBase.java:45)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1807340745", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1807340745'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;View my customer account&apos;]&quot;}
-  (Session info: chrome=138.0.7204.169)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [367e42049bf00ad650c819c73b5273cf, findElement {value=//a[@title=&apos;View my customer account&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\sata0222\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59650}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59650/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 367e42049bf00ad650c819c73b5273cf
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:171)
-	at com.ui.pages.MyAccountPage.getUserName(MyAccountPage.java:20)
-	at com.ui.tests.LoginTest.loginCSVTest(LoginTest.java:80)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1462682118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1462682118'><pre>java.lang.IllegalArgumentException: No enum constant com.constants.Browser.
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at com.constants.Browser.valueOf(Browser.java:3)
+	at com.ui.tests.TestBase.setUp(TestBase.java:45)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-</pre></div></td>
-<td>1</td>
-<td>com.ui.tests.LoginTest@623e088f</td></tr>
-<tr>
-<td title='com.ui.tests.LoginTest.loginCSVTest()'><b>loginCSVTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with valid user is able to login into Application<br>Parameters: User [emailAddress=taestimrail@yopmail.com, password=password]</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;View my customer account&apos;]&quot;}
-  (Session info: chrome=138.0.7204.169)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [358b8e2943a619f6c120d7d63880580e, findElement {value=//a[@title=&apos;View my customer account&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\sata0222\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59745}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59745/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 358b8e2943a619f6c120d7d63880580e
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:171)
-	at com.ui.pages.MyAccountPage.getUserName(MyAccountPage.java:20)
-	at com.ui.tests.LoginTest.loginCSVTest(LoginTest.java:80)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace409383575", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace409383575'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;View my customer account&apos;]&quot;}
-  (Session info: chrome=138.0.7204.169)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [358b8e2943a619f6c120d7d63880580e, findElement {value=//a[@title=&apos;View my customer account&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\sata0222\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59745}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59745/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 358b8e2943a619f6c120d7d63880580e
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:171)
-	at com.ui.pages.MyAccountPage.getUserName(MyAccountPage.java:20)
-	at com.ui.tests.LoginTest.loginCSVTest(LoginTest.java:80)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -214,67 +106,30 @@ Session ID: 358b8e2943a619f6c120d7d63880580e
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
 </pre></div></td>
-<td>1</td>
-<td>com.ui.tests.LoginTest@623e088f</td></tr>
+<td>0</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
 <tr>
-<td title='com.ui.tests.LoginTest.loginJsonTest()'><b>loginJsonTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with valid user is able to login into Application<br>Parameters: User [emailAddress=sandsj@yopmail.com, password=password]</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;View my customer account&apos;]&quot;}
-  (Session info: chrome=138.0.7204.169)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d7221075eb00907501ac4108c2002f4b, findElement {value=//a[@title=&apos;View my customer account&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\sata0222\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59656}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59656/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d7221075eb00907501ac4108c2002f4b
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:171)
-	at com.ui.pages.MyAccountPage.getUserName(MyAccountPage.java:20)
-	at com.ui.tests.LoginTest.loginJsonTest(LoginTest.java:72)
+<td title='com.ui.tests.LoginTest.setUp()'><b>setUp</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Load the home page of this website<br>Parameters: , false, false, [TestResult name={null} status=CREATED method=LoginTest.loginCSVTest(com.ui.pojo.User)[pri:0, instance:com.ui.tests.LoginTest@2fc6f97f] output={null}]</td>
+<td><div><pre>java.lang.IllegalArgumentException: No enum constant com.constants.Browser.
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at com.constants.Browser.valueOf(Browser.java:3)
+	at com.ui.tests.TestBase.setUp(TestBase.java:45)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace524430151", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace524430151'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;View my customer account&apos;]&quot;}
-  (Session info: chrome=138.0.7204.169)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d7221075eb00907501ac4108c2002f4b, findElement {value=//a[@title=&apos;View my customer account&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\sata0222\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59656}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59656/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d7221075eb00907501ac4108c2002f4b
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:171)
-	at com.ui.pages.MyAccountPage.getUserName(MyAccountPage.java:20)
-	at com.ui.tests.LoginTest.loginJsonTest(LoginTest.java:72)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace202402073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace202402073'><pre>java.lang.IllegalArgumentException: No enum constant com.constants.Browser.
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at com.constants.Browser.valueOf(Browser.java:3)
+	at com.ui.tests.TestBase.setUp(TestBase.java:45)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -285,31 +140,66 @@ Session ID: d7221075eb00907501ac4108c2002f4b
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
 </pre></div></td>
-<td>1</td>
-<td>com.ui.tests.LoginTest@623e088f</td></tr>
+<td>0</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ui.tests.LoginTest.loginJsonTest()'><b>loginJsonTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with valid user is able to login into Application<br>Parameters: User [emailAddress=testimrail@yopmail.com, password=password]</td>
+<td title='com.ui.tests.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Tear down the browser</td>
 <td></td>
-<td>2</td>
-<td>com.ui.tests.LoginTest@623e088f</td></tr>
+<td>-1753512365</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
 <tr>
-<td title='com.ui.tests.LoginTest.loginExcelTest()'><b>loginExcelTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with valid user is able to login into Application<br>Parameters: User [emailAddress=testimrail@yopmail.com, password=password]</td>
+<td title='com.ui.tests.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Tear down the browser</td>
 <td></td>
-<td>2</td>
-<td>com.ui.tests.LoginTest@623e088f</td></tr>
+<td>-1753512365</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
 <tr>
-<td title='com.ui.tests.LoginTest.loginCSVTest()'><b>loginCSVTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with valid user is able to login into Application<br>Parameters: User [emailAddress=testimrail@yopmail.com, password=password]</td>
+<td title='com.ui.tests.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Tear down the browser</td>
 <td></td>
-<td>1</td>
-<td>com.ui.tests.LoginTest@623e088f</td></tr>
+<td>-1753512365</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
+<tr>
+<td title='com.ui.tests.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Tear down the browser</td>
+<td></td>
+<td>-1753512365</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
+<tr>
+<td title='com.ui.tests.LoginTest.setUp()'><b>setUp</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Load the home page of this website</td>
+<td></td>
+<td>-1753512365</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
+<tr>
+<td title='com.ui.tests.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Tear down the browser</td>
+<td></td>
+<td>-1753512366</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
+<tr>
+<td title='com.ui.tests.LoginTest.setUp()'><b>setUp</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Load the home page of this website</td>
+<td></td>
+<td>-1753512365</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
+<tr>
+<td title='com.ui.tests.LoginTest.setUp()'><b>setUp</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Load the home page of this website</td>
+<td></td>
+<td>-1753512366</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
+<tr>
+<td title='com.ui.tests.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Tear down the browser</td>
+<td></td>
+<td>-1753512365</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
+<tr>
+<td title='com.ui.tests.LoginTest.setUp()'><b>setUp</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Load the home page of this website</td>
+<td></td>
+<td>-1753512365</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -319,64 +209,27 @@ Session ID: d7221075eb00907501ac4108c2002f4b
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ui.tests.LoginTest.loginCSVTest()'><b>loginCSVTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with valid user is able to login into Application<br>Parameters: User [emailAddress=sandsj@yopmail.com, password=pass123]</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;View my customer account&apos;]&quot;}
-  (Session info: chrome=138.0.7204.169)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [600db1923ea20daa742dbca068e5590b, findElement {value=//a[@title=&apos;View my customer account&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\sata0222\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59555/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 600db1923ea20daa742dbca068e5590b
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:171)
-	at com.ui.pages.MyAccountPage.getUserName(MyAccountPage.java:20)
-	at com.ui.tests.LoginTest.loginCSVTest(LoginTest.java:80)
+<td title='com.ui.tests.LoginTest.loginCSVTest()'><b>loginCSVTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with valid user is able to login into Application<br>Parameters: User [emailAddress=taestimrail@yopmail.com, password=password]</td>
+<td><div><pre>java.lang.IllegalArgumentException: No enum constant com.constants.Browser.
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at com.constants.Browser.valueOf(Browser.java:3)
+	at com.ui.tests.TestBase.setUp(TestBase.java:45)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace961859950", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace961859950'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;View my customer account&apos;]&quot;}
-  (Session info: chrome=138.0.7204.169)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [600db1923ea20daa742dbca068e5590b, findElement {value=//a[@title=&apos;View my customer account&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\sata0222\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59555/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 600db1923ea20daa742dbca068e5590b
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at com.utility.BrowserUtility.getVisibleText(BrowserUtility.java:171)
-	at com.ui.pages.MyAccountPage.getUserName(MyAccountPage.java:20)
-	at com.ui.tests.LoginTest.loginCSVTest(LoginTest.java:80)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1620544358", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1620544358'><pre>java.lang.IllegalArgumentException: No enum constant com.constants.Browser.
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at com.constants.Browser.valueOf(Browser.java:3)
+	at com.ui.tests.TestBase.setUp(TestBase.java:45)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -387,8 +240,178 @@ Session ID: 600db1923ea20daa742dbca068e5590b
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
 </pre></div></td>
-<td>1</td>
-<td>com.ui.tests.LoginTest@623e088f</td></tr>
+<td>0</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
+<tr>
+<td title='com.ui.tests.LoginTest.loginJsonTest()'><b>loginJsonTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with valid user is able to login into Application<br>Parameters: User [emailAddress=testimrail@yopmail.com, password=password]</td>
+<td><div><pre>java.lang.IllegalArgumentException: No enum constant com.constants.Browser.
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at com.constants.Browser.valueOf(Browser.java:3)
+	at com.ui.tests.TestBase.setUp(TestBase.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1112790576", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1112790576'><pre>java.lang.IllegalArgumentException: No enum constant com.constants.Browser.
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at com.constants.Browser.valueOf(Browser.java:3)
+	at com.ui.tests.TestBase.setUp(TestBase.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+</pre></div></td>
+<td>0</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
+<tr>
+<td title='com.ui.tests.LoginTest.loginExcelTest()'><b>loginExcelTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with valid user is able to login into Application<br>Parameters: User [emailAddress=testimrail@yopmail.com, password=password]</td>
+<td><div><pre>java.lang.IllegalArgumentException: No enum constant com.constants.Browser.
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at com.constants.Browser.valueOf(Browser.java:3)
+	at com.ui.tests.TestBase.setUp(TestBase.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace601275984", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace601275984'><pre>java.lang.IllegalArgumentException: No enum constant com.constants.Browser.
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at com.constants.Browser.valueOf(Browser.java:3)
+	at com.ui.tests.TestBase.setUp(TestBase.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+</pre></div></td>
+<td>0</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
+<tr>
+<td title='com.ui.tests.LoginTest.loginCSVTest()'><b>loginCSVTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with valid user is able to login into Application<br>Parameters: User [emailAddress=testimrail@yopmail.com, password=password]</td>
+<td><div><pre>java.lang.IllegalArgumentException: No enum constant com.constants.Browser.
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at com.constants.Browser.valueOf(Browser.java:3)
+	at com.ui.tests.TestBase.setUp(TestBase.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace657710212", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace657710212'><pre>java.lang.IllegalArgumentException: No enum constant com.constants.Browser.
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at com.constants.Browser.valueOf(Browser.java:3)
+	at com.ui.tests.TestBase.setUp(TestBase.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+</pre></div></td>
+<td>0</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
+<tr>
+<td title='com.ui.tests.LoginTest.loginCSVTest()'><b>loginCSVTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with valid user is able to login into Application<br>Parameters: User [emailAddress=sandsj@yopmail.com, password=pass123]</td>
+<td><div><pre>java.lang.IllegalArgumentException: No enum constant com.constants.Browser.
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at com.constants.Browser.valueOf(Browser.java:3)
+	at com.ui.tests.TestBase.setUp(TestBase.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace225802335", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace225802335'><pre>java.lang.IllegalArgumentException: No enum constant com.constants.Browser.
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at com.constants.Browser.valueOf(Browser.java:3)
+	at com.ui.tests.TestBase.setUp(TestBase.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+</pre></div></td>
+<td>0</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
+<tr>
+<td title='com.ui.tests.LoginTest.loginJsonTest()'><b>loginJsonTest</b><br>Test class: com.ui.tests.LoginTest<br>Test method: Verifies with valid user is able to login into Application<br>Parameters: User [emailAddress=sandsj@yopmail.com, password=password]</td>
+<td><div><pre>java.lang.IllegalArgumentException: No enum constant com.constants.Browser.
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at com.constants.Browser.valueOf(Browser.java:3)
+	at com.ui.tests.TestBase.setUp(TestBase.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace911449373", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace911449373'><pre>java.lang.IllegalArgumentException: No enum constant com.constants.Browser.
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at com.constants.Browser.valueOf(Browser.java:3)
+	at com.ui.tests.TestBase.setUp(TestBase.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+</pre></div></td>
+<td>0</td>
+<td>com.ui.tests.LoginTest@2fc6f97f</td></tr>
 </table><p>
 </body>
 </html>
