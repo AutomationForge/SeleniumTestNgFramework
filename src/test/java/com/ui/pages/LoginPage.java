@@ -15,6 +15,7 @@ public class LoginPage extends BrowserUtility {
 		
 	}
 
+	//Enter Details
 	public MyAccountPage doLoginWith(String emailAddress, String password) {
 
 		enterText(EMAIL_TEXTBOX_LOCATOR, emailAddress);
